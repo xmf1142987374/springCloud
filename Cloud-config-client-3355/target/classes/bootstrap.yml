@@ -1,0 +1,24 @@
+server:
+  port: 3355
+spring:
+  application:
+    name: cloud-client
+  cloud:
+    config:
+      # 读取分支
+      label: master
+      name: config  #配置文件名称
+      profile: dev
+      uri: http://localhost:3344
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka,http://eureka9002.com:9002/eureka
+
+#暴露监控节点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,22 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xmf1142987374/springcloud-config.git
+          # 搜索目录
+          search-paths: springcloud-config
+          force-pull: true
+          username: Xmf1142987374
+          password: wdsj123570
+      # 读取分支
+      label: master
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka9001.com:9001/eureka,http://eureka9002.com:9002/eureka
