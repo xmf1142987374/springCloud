@@ -22,6 +22,10 @@
       <module>Cloud-gateway-gateway9527</module>
       <module>Cloud-config-center-3344</module>
       <module>Cloud-config-client-3355</module>
+    <module>CloudAlibaba-nacos-provide-9003</module>
+    <module>CloudAlibaba-nacos-provide-9004</module>
+    <module>CloudAlibaba-nacos-consumer-83</module>
+      <module>Cloud-nacos-config-3377</module>
   </modules>
   <packaging>pom</packaging>
 
